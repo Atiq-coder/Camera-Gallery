@@ -13,6 +13,8 @@ import {
 import AddProduct from '../AddProduct/AddProduct';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageOrders from '../ManageOrders/ManageOrders';
+import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
+import Pay from '../Pay/Pay';
 
 const Dashboard = () => {
     const { user, logOut } = useAuth();
@@ -39,12 +41,17 @@ const Dashboard = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Nav className="flex-column">
-                        <Nav.Link><Link className="link" to="/home">Back</Link></Nav.Link>
-                        <Nav.Link><Link className="link" to={`${url}/manageAllOrders`}>Manage All Orders</Link></Nav.Link>
-                        {admin && <>
+                        <Nav.Link><Link className="link" to="/home">Back to home</Link></Nav.Link>
+                        {admin ? <>
+                            <Nav.Link><Link className="link" to={`${url}/manageAllOrders`}>Manage All Orders</Link></Nav.Link>
                             <Nav.Link><Link className="link" to={`${url}/addProduct`}>Add Product</Link></Nav.Link>
-                            <Nav.Link><Link className="link" to={`${url}/makeAdmin`}>Make Admin</Link></Nav.Link></>}
-                        <Nav.Link><Link className="link" to={`${url}/manageOrders`}>Manage Orders</Link></Nav.Link>
+                            <Nav.Link><Link className="link" to={`${url}/makeAdmin`}>Make Admin</Link></Nav.Link>
+                            <Nav.Link><Link className="link" to={`${url}/manageOrders`}>Manage Orders</Link></Nav.Link>
+                        </> : <>
+                            <Nav.Link><Link className="link" to={`${url}/pay`}>Pay</Link></Nav.Link>
+                            <Nav.Link><Link className="link" to={`${url}/myOrders`}>My Orders</Link></Nav.Link>
+                            <Nav.Link><Link className="link" to={`${url}/review`}>Review</Link></Nav.Link>
+                        </>}
                         {user?.email ?
                             <Button variant="secondary" onClick={logOut}>Sign Out</Button>
                             : ''}
@@ -55,18 +62,26 @@ const Dashboard = () => {
                 <Route exact path={path}>
                     <ManageAllOrders></ManageAllOrders>
                 </Route>
-                <Route path={`${path}/manageAllOrders`}>
+                <Route path={`${path}/pay`}>
+                    <Pay></Pay>
+                </Route>
+                <Route path={`${path}/myOrders`}>
+                </Route>
+                <Route path={`${path}/review`}>
+                </Route>
+                <AdminRoute path={`${path}/manageAllOrders`}>
                     <ManageAllOrders></ManageAllOrders>
-                </Route>
-                <Route path={`${path}/addProduct`}>
+                </AdminRoute>
+                <AdminRoute path={`${path}/addProduct`}>
                     <AddProduct></AddProduct>
-                </Route>
-                <Route path={`${path}/makeAdmin`}>
+                </AdminRoute>
+                <AdminRoute path={`${path}/makeAdmin`}>
                     <MakeAdmin></MakeAdmin>
-                </Route>
-                <Route path={`${path}/manageOrders`}>
+                </AdminRoute>
+                <AdminRoute path={`${path}/manageOrders`}>
                     <ManageOrders></ManageOrders>
-                </Route>
+                    <ManageAllOrders></ManageAllOrders>
+                </AdminRoute>
             </Switch>
         </>
     );

@@ -1,0 +1,7 @@
+.add-product{
+    height: 90vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

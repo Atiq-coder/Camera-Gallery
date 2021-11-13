@@ -8,7 +8,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://media.cntraveler.com/photos/5f8745ea428582a0bb860566/master/w_1920%2Cc_limit/Barbados-GettyImages-868720620.jpg"
+                        src="https://www.wallpapertip.com/wmimgs/27-273297_nikon-d810.jpg"
                         alt="Third slide"
                     />
 
@@ -20,7 +20,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://media.cntraveler.com/photos/5e3839e21e8a810008d21c2f/master/w_1920%2Cc_limit/CaribbeanLandingPage-StLucia-2020-GettyImages-166565984.jpg"
+                        src="https://images5.alphacoders.com/292/thumb-1920-292677.jpg"
                         alt="Third slide"
                     />
 
@@ -32,7 +32,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://media.cntraveler.com/photos/5cb63a261a7e702d60f70951/master/w_1920%2Cc_limit/Lavender-fields-Provence_GettyImages-680500373.jpg"
+                        src="https://wallpaperaccess.com/full/476333.jpg"
                         alt="Third slide"
                     />
 
@@ -44,25 +44,13 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://media.cntraveler.com/photos/605967821b01d7e74b70528d/master/w_1920%2Cc_limit/IsleOfSkye-GettyImages-1160979608.jpg"
+                        src="https://live.staticflickr.com/8029/7948158008_9beb2e6e35_o.jpg"
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
                         <h3>Carrizo Plain National Monument</h3>
                         <p>This expansive grassland is best known for the vibrant wildflower displays that carpet its rolling hills </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://media.cntraveler.com/photos/5cb63a4a515ac847de3761ad/master/w_1920%2Cc_limit/Plitvice-Lakes-National-Park-Croatia_GettyImages-609917794.jpg"
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Plitvice Lakes National Park, Croatia</h3>
-                        <p>If you can make it through the crowds of selfie-taking tourists, you'll discover that Plitvice Lakes </p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
