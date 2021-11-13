@@ -21,7 +21,7 @@ const Register = () => {
         if (loginData.password !== loginData.re_password) {
             alert("Your password didn't metch")
         }
-        registerUser(loginData.email, loginData.re_password, history);
+        registerUser(loginData.email, loginData.re_password, loginData.name, history);
         e.preventDefault();
     }
     return (

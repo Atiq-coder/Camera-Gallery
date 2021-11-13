@@ -16,6 +16,11 @@ const Header = () => {
                         <Nav.Link><Link className="link" to="/cellocutions">Cellocutions</Link></Nav.Link>
                         <Nav.Link><Link className="link" to="/deshbord">Deshbord</Link></Nav.Link>
                         {user?.email ?
+                            <Nav.Link><Link className="link" to="/dashboard">Dashboard</Link></Nav.Link>
+                            :
+                            ''}
+                        <span className="text-white mt-2">{user?.displayName}</span>
+                        {user?.email ?
                             <Button variant="secondary" onClick={logOut}>Sign Out</Button>
                             :
                             <Nav.Link><Link className="link" to="/login">Sign In</Link></Nav.Link>}
