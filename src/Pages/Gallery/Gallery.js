@@ -2,29 +2,27 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Row } from 'react-bootstrap';
-import Product from '../Product/Product';
+import GalleryImg from '../GalleryImg/GalleryImg';
 
-
-
-const Products = () => {
+const Gallery = () => {
     const [services, setServices] = useState([]);
     // Data load
     useEffect(() => {
-        fetch('https://eerie-demon-25137.herokuapp.com/destinations')
+        fetch('http://localhost:5000/gallery')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);
     return (
 
         <div className="cards-section container-fluid">
-            <h2 className="pt-5 text-center">OUR PRODUCTS</h2>
-            <Row xs={1} md={3} className="g-1">
+            <h2 className="pt-5 text-center">CAPTURED IMAGES</h2>
+            <Row xs={1} md={3}>
                 {
-                    services.map(service => <Product key={service._id} service={service}></Product>)
+                    services.map(service => <GalleryImg key={service._id} service={service}></GalleryImg>)
                 }
             </Row>
         </div>
     );
 };
 
-export default Products;
+export default Gallery;

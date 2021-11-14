@@ -15,6 +15,8 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageOrders from '../ManageOrders/ManageOrders';
 import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
 import Pay from '../Pay/Pay';
+import AddReview from '../Review/AddReview';
+import MyOrders from '../MyOrders/MyOrders';
 
 const Dashboard = () => {
     const { user, logOut } = useAuth();
@@ -66,8 +68,10 @@ const Dashboard = () => {
                     <Pay></Pay>
                 </Route>
                 <Route path={`${path}/myOrders`}>
+                    <MyOrders></MyOrders>
                 </Route>
                 <Route path={`${path}/review`}>
+                    <AddReview></AddReview>
                 </Route>
                 <AdminRoute path={`${path}/manageAllOrders`}>
                     <ManageAllOrders></ManageAllOrders>
