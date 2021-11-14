@@ -1,19 +1,15 @@
 import React, { useState } from 'react';
 import { Button, Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
-// import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
-    useParams,
     useRouteMatch
 } from "react-router-dom";
 import AddProduct from '../AddProduct/AddProduct';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageOrders from '../ManageOrders/ManageOrders';
-// import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
 import Pay from '../Pay/Pay';
 import AddReview from '../Review/AddReview';
 import MyOrders from '../MyOrders/MyOrders';
@@ -64,7 +60,7 @@ const Dashboard = () => {
             </Offcanvas>
             <Switch>
                 <Route exact path={path}>
-                    <ManageAllOrders></ManageAllOrders>
+                    <ManageOrders></ManageOrders>
                 </Route>
                 <Route path={`${path}/pay`}>
                     <Pay></Pay>

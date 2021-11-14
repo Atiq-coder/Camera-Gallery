@@ -53,7 +53,7 @@ const AddReview = () => {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Rating</Form.Label>
-                        <Form.Control ref={ratingRef} type="number" required placeholder="Input a number 1 to 5" />
+                        <Form.Control ref={ratingRef} type="number" required placeholder="Input a number 0 to 5" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Your Opinion</Form.Label>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
-import './Product.css';
+import { Link } from 'react-router-dom';
 
 const Product = (props) => {
     const { title, text, img, price } = props.service;
@@ -9,12 +9,12 @@ const Product = (props) => {
             {/* Product card */}
             <Col className="p-4 product-card">
                 <Card className="bg-light text-dark">
-                    <Card.Img className="product-img" variant="top" src={img} />
+                    <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
                         <Card.Text><strong>Price: ${price}</strong></Card.Text>
-                        <Button variant="dark">Buy Now</Button>
+                        <Link to="/purchase"><Button variant="dark">Buy Now</Button></Link>
                     </Card.Body>
                 </Card>
             </Col>

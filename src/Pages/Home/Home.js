@@ -1,14 +1,10 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Collections from '../Collections/Collections';
-// import Banner from '../Pages/Banner/Banner';
-// import Footer from '../Pages/Shared/Footer/Footer';
 import Gallery from '../Gallery/Gallery';
-// import Header from '../Pages/Shared/Header/Header';
+import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
-// import Products from '../Products/Products';
 
 const Home = () => {
     return (
@@ -16,7 +12,7 @@ const Home = () => {
             <Header></Header>
             <Banner></Banner>
             <Gallery></Gallery>
-            <Collections></Collections>
+            <Products></Products>
             <Reviews></Reviews>
             <Footer></Footer>
         </div>

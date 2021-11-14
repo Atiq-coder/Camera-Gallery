@@ -27,7 +27,6 @@ const ManageOrder = (props) => {
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
                         <Card.Text><strong>Price: ${price}</strong></Card.Text>
-                        <Button className="me-3" variant="dark">Pending</Button>
                         <Button onClick={() => handleDelete(_id)} variant="dark">Delete</Button>
                     </Card.Body>
                 </Card>

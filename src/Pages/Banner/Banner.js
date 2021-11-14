@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -13,8 +14,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Barbados</h3>
-                        <p>Barbados has something for everyone: pink sand beaches, exotic wildlife (think monkeys,</p>
+                        <Link to="/collections"><h2 className="text-white mb-5">Explore</h2> </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -25,8 +25,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Lucia</h3>
-                        <p>This deeply green and mountainous island is a favorite for those looking for adventure and romance. </p>
+                        <Link to="/collections"><h2 className="text-white mb-5">Explore</h2> </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,8 +36,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Northern Colorado</h3>
-                        <p>With its lush forests, snow-capped peaks, icy-blue alpine lakes, and abundant herds of elk,</p>
+                        <Link to="/collections"><h2 className="text-white mb-5">Explore</h2> </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -49,8 +47,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Carrizo Plain National Monument</h3>
-                        <p>This expansive grassland is best known for the vibrant wildflower displays that carpet its rolling hills </p>
+                        <Link to="/collections"><h2 className="text-white mb-5">Explore</h2> </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

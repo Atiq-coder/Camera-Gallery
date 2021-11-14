@@ -15,6 +15,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import ManageAllOrders from './Pages/Dashboard/ManageAllOrders/ManageAllOrders';
+import Purchase from './Pages/Purchase/Purchase';
 
 
 //Name: cameraGallery
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
+            </PrivateRoute>
+            <PrivateRoute path="/purchase">
+              <Purchase></Purchase>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>

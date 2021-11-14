@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Collection.css';
 
 const Collection = (props) => {
     const { title, text, img, price } = props.service;
@@ -13,7 +15,7 @@ const Collection = (props) => {
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
                         <Card.Text><strong>Price: ${price}</strong></Card.Text>
-                        <Button variant="dark">Book Now</Button>
+                        <Link to="/purchase"><Button variant="dark">Buy Now</Button></Link>
                     </Card.Body>
                 </Card>
             </Col>
