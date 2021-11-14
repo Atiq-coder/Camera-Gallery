@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+// import useAuth from '../../../hooks/useAuth';
 import './Header.css';
 
 const Header = () => {

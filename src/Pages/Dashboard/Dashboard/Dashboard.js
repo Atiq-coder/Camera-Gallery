@@ -13,10 +13,11 @@ import {
 import AddProduct from '../AddProduct/AddProduct';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageOrders from '../ManageOrders/ManageOrders';
-import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
+// import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
 import Pay from '../Pay/Pay';
 import AddReview from '../Review/AddReview';
 import MyOrders from '../MyOrders/MyOrders';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 const Dashboard = () => {
     const { user, logOut } = useAuth();

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import initializeFirebase from "../Login/Login/Firebase/Firebase.init"
+// import initializeFirebase from "../Login/Login/Firebase/Firebase.init"
 import {
     getAuth, createUserWithEmailAndPassword,
     signInWithEmailAndPassword, onAuthStateChanged,
     signOut, updateProfile
 } from "firebase/auth";
+import initializeFirebase from "../Pages/Login/Firebase/Firebase.init";
 
 
 initializeFirebase();

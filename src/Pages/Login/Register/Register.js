@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Alert, Button, Form, Spinner } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
+import useAuth from '../../../hooks/useAuth';
+// import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
 

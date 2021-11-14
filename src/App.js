@@ -1,15 +1,20 @@
 import './App.css';
-import Home from './Home/Home';
+// import Home from './Pages/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import NotFound from './Pages/NotFound/NotFound';
-import Login from './Login/Login/Login';
-import Register from './Login/Register/Register';
+import Home from './Pages/Home/Home';
+// import Login from './Login/Login/Login';
+// import Register from './Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
-import PrivateRoute from './PrivateRoute/PrivateRoute';
+// import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 import Collections from './Pages/Collections/Collections';
 import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
+
 
 //Name: cameraGallery
 //Password: tkhiacG3N28InCtc
