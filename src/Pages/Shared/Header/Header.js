@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
+import useAuth from '../../../hooks/useAuth';
 import './Header.css';
 
 const Header = () => {
@@ -13,8 +13,7 @@ const Header = () => {
                     <Navbar.Brand href="#home">CAMERA GALLERY</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link><Link className="link" to="/home">Home</Link></Nav.Link>
-                        <Nav.Link><Link className="link" to="/cellocutions">Cellocutions</Link></Nav.Link>
-                        <Nav.Link><Link className="link" to="/deshbord">Deshbord</Link></Nav.Link>
+                        <Nav.Link><Link className="link" to="/collections">Collections</Link></Nav.Link>
                         {user?.email ?
                             <Nav.Link><Link className="link" to="/dashboard">Dashboard</Link></Nav.Link>
                             :

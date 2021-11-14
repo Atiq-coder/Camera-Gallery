@@ -1,14 +1,15 @@
 import './App.css';
 import Home from './Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NotFound from './NotFound/NotFound';
+// import NotFound from './Pages/NotFound/NotFound';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
-import Deshbord from './Deshbord/Deshbord';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
+import Collections from './Pages/Collections/Collections';
+import NotFound from './Pages/NotFound/NotFound';
 
 //Name: cameraGallery
 //Password: tkhiacG3N28InCtc
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/collections">
+              <Collections></Collections>
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>

@@ -28,7 +28,7 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Product add Successful');
+                    alert('Product added Successful');
                     e.target.reset();
                 }
             })

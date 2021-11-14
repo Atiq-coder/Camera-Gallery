@@ -10,7 +10,7 @@ const Products = () => {
     const [services, setServices] = useState([]);
     // Data load
     useEffect(() => {
-        fetch('https://eerie-demon-25137.herokuapp.com/destinations')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);
