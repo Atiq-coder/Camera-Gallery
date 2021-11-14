@@ -5,12 +5,16 @@ import './MakeAdmin.css';
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
     const [addedAdmin, setAddedAdmin] = useState(false);
+
+    // Handle OnBlur
     const handleOnBlur = e => {
         setEmail(e.target.value);
     }
+
+    // Put Admin Add
     const handleAdminAdd = e => {
         const user = { email }
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://stark-mesa-58597.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

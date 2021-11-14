@@ -5,12 +5,12 @@ import { Row } from 'react-bootstrap';
 import Review from '../Review/Review';
 
 
-
 const Reviews = () => {
     const [services, setServices] = useState([]);
+
     // Data load
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://stark-mesa-58597.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

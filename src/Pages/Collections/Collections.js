@@ -2,9 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Row } from 'react-bootstrap';
-// import Footer from '../Shared/Footer/Footer';
 import Collection from '../Collection/Collection';
-// import Header from '../Shared/Header/Header';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 
@@ -12,9 +10,10 @@ import Header from '../Shared/Header/Header';
 
 const Collections = () => {
     const [services, setServices] = useState([]);
+
     // Data load
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://stark-mesa-58597.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

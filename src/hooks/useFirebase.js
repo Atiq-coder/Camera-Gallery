@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-// import initializeFirebase from "../Login/Login/Firebase/Firebase.init"
+import initializeFirebase from "../Pages/Login/Firebase/Firebase.init";
+
 import {
     getAuth, createUserWithEmailAndPassword,
     signInWithEmailAndPassword, onAuthStateChanged,
     signOut, updateProfile
 } from "firebase/auth";
-import initializeFirebase from "../Pages/Login/Firebase/Firebase.init";
 
-
+// Initialize Firebase
 initializeFirebase();
 
 const useFirebase = () => {
@@ -74,7 +74,7 @@ const useFirebase = () => {
 
         });
         return () => unsubscribe;
-    }, [])
+    }, [auth])
 
 
     // LogOut
@@ -92,7 +92,7 @@ const useFirebase = () => {
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
 
-        fetch('http://localhost:5000/users', {
+        fetch('https://stark-mesa-58597.herokuapp.com/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -103,7 +103,7 @@ const useFirebase = () => {
 
     // Admin data load
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user?.email}`)
+        fetch(`https://stark-mesa-58597.herokuapp.com/users/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin));
     }, [user?.email])

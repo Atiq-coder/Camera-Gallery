@@ -18,8 +18,6 @@ import ManageAllOrders from './Pages/Dashboard/ManageAllOrders/ManageAllOrders';
 import Purchase from './Pages/Purchase/Purchase';
 
 
-//Name: cameraGallery
-//Password: tkhiacG3N28InCtc
 function App() {
   return (
     <div>

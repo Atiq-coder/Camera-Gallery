@@ -28,10 +28,10 @@ const Dashboard = () => {
 
     return (
         <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="secondary" variant="dark">
                 <Container>
                     <Nav className="ms-auto">
-                        <Nav.Link><Link className="link" to="/dashboard"><Button variant="secondary" onClick={handleShow}>Dashboard</Button></Link></Nav.Link>
+                        <Nav.Link><Link className="link" to="/dashboard"><Button variant="dark" onClick={handleShow}>Dashboard</Button></Link></Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
@@ -58,6 +58,7 @@ const Dashboard = () => {
                     </Nav>
                 </Offcanvas.Body>
             </Offcanvas>
+
             <Switch>
                 <Route exact path={path}>
                     <ManageOrders></ManageOrders>

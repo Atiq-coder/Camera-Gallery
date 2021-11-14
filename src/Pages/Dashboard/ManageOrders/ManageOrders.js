@@ -8,9 +8,10 @@ import ManageOrder from '../ManageOrder/ManageOrder';
 
 const ManageOrders = () => {
     const [services, setServices] = useState([]);
+
     // Data load
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://stark-mesa-58597.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

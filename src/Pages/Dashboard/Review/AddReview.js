@@ -21,7 +21,7 @@ const AddReview = () => {
         const newReview = { name, opinion, email, rating };
 
         // Post Product
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://stark-mesa-58597.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

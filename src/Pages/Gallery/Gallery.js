@@ -6,9 +6,10 @@ import GalleryImg from '../GalleryImg/GalleryImg';
 
 const Gallery = () => {
     const [services, setServices] = useState([]);
+
     // Data load
     useEffect(() => {
-        fetch('http://localhost:5000/gallery')
+        fetch('https://stark-mesa-58597.herokuapp.com/gallery')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

@@ -12,7 +12,7 @@ const Purchase = () => {
             <Header></Header>
             <div className="purchase">
                 <div className="w-50">
-                    {/* Shipping Form */}
+                    {/* Purchase Form */}
                     <Form>
                         <h5>Order contact</h5>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -40,7 +40,7 @@ const Purchase = () => {
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                             <Form.Control required placeholder="Street Address" as="textarea" rows={2} />
                         </Form.Group>
-                        <Button variant="secondary" type="submit">
+                        <Button variant="dark" type="submit">
                             Submit
                         </Button>
                     </Form>

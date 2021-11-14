@@ -1,10 +1,6 @@
 import React from 'react';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
-// import Footer from '../Pages/Shared/Footer/Footer';
-// import Header from '../Pages/Shared/Header/Header';
-// import Footer from '../Shared/Footer/Footer';
-// import Header from '../Shared/Header/Header';
 import './NotFound.css';
 
 const NotFound = () => {

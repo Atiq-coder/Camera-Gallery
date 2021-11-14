@@ -5,14 +5,12 @@ import { Row } from 'react-bootstrap';
 import Product from '../Product/Product';
 
 
-
-
 const Products = () => {
     const [services, setServices] = useState([]);
 
     // Data load
     useEffect(() => {
-        fetch('http://localhost:5000/products6')
+        fetch('https://stark-mesa-58597.herokuapp.com/products6')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

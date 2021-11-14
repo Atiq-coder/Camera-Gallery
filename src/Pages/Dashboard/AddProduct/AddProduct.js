@@ -18,7 +18,7 @@ const AddProduct = () => {
         const NewProduct = { title, text, price, img };
 
         // Post Product
-        fetch('http://localhost:5000/products', {
+        fetch('https://stark-mesa-58597.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

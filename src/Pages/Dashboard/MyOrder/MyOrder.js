@@ -6,7 +6,7 @@ const MyOrder = (props) => {
 
     // Handle Cancel
     const handleDelete = id => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://stark-mesa-58597.herokuapp.com/products/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
