@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 
-const ManageOneOrder = (props) => {
+const MyOrder = (props) => {
     const { _id, title, text, price } = props.service;
 
-    // Handle Delete
+    // Handle Cancel
     const handleDelete = id => {
         const url = `http://localhost:5000/products/${id}`;
         fetch(url, {
@@ -27,8 +27,7 @@ const ManageOneOrder = (props) => {
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
                         <Card.Text><strong>Price: ${price}</strong></Card.Text>
-                        <Button className="me-3" variant="dark">Pending</Button>
-                        <Button onClick={() => handleDelete(_id)} variant="dark">Delete</Button>
+                        <Button onClick={() => handleDelete(_id)} variant="dark">Cancel</Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -37,4 +36,4 @@ const ManageOneOrder = (props) => {
     );
 };
 
-export default ManageOneOrder;
+export default MyOrder;

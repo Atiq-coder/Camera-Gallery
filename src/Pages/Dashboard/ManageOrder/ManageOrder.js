@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Card, Col } from 'react-bootstrap';
+import { Card, Col, Button } from 'react-bootstrap';
 
-const ManageOneOrder = (props) => {
+const ManageOrder = (props) => {
     const { _id, title, text, price } = props.service;
 
     // Handle Delete
@@ -13,14 +13,14 @@ const ManageOneOrder = (props) => {
             .then(res => res.json())
             .then(data => {
                 if (data.deletedCount > 0) {
-                    alert('Canceled successfully');
+                    alert('Deleted successfully');
 
                 }
             })
     }
-
     return (
         <div>
+            {/* Product card */}
             <Col className="p-4 product-card">
                 <Card className="bg-light text-dark">
                     <Card.Body>
@@ -32,9 +32,8 @@ const ManageOneOrder = (props) => {
                     </Card.Body>
                 </Card>
             </Col>
-            <br />
         </div>
     );
 };
 
-export default ManageOneOrder;
+export default ManageOrder;

@@ -85,7 +85,6 @@ const Dashboard = () => {
                 </AdminRoute>
                 <AdminRoute path={`${path}/manageOrders`}>
                     <ManageOrders></ManageOrders>
-                    <ManageAllOrders></ManageAllOrders>
                 </AdminRoute>
             </Switch>
         </>

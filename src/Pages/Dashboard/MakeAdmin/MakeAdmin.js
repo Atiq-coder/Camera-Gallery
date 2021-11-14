@@ -31,12 +31,12 @@ const MakeAdmin = () => {
         <div className="make-admin">
             <div className="w-50">
                 {/* Add product form */}
+                <h2 className="text-center mb-3">Make An Admin</h2>
                 <Form onSubmit={handleAdminAdd}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Make an admin</Form.Label>
                         <Form.Control onBlur={handleOnBlur} type="email" required placeholder="Email" />
                     </Form.Group>
-                    <Button className="w-100" variant="secondary" type="submit">
+                    <Button className="w-100" variant="dark" type="submit">
                         Add Admin
                     </Button>
                 </Form>

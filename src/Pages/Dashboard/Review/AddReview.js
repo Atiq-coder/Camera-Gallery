@@ -41,6 +41,7 @@ const AddReview = () => {
         <div className="review">
             <div className="w-50">
                 {/* Add product form */}
+                <h2 className="text-center mb-3">Add Review</h2>
                 <Form onSubmit={handleAddProduct}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Your Name</Form.Label>

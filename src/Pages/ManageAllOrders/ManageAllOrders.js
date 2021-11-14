@@ -6,7 +6,7 @@ const ManageAllOrders = () => {
     const [services, setServices] = useState([]);
     // Data load
     useEffect(() => {
-        fetch('https://eerie-demon-25137.herokuapp.com/destinations')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);
@@ -14,7 +14,7 @@ const ManageAllOrders = () => {
     return (
 
         <div id="manageallorders" className="cards-section container">
-            <Row xs={1} md={2} className="d-flex justify-content-center mt-5">
+            <Row xs={1} md={3} className="d-flex justify-content-center mt-5">
                 {
                     services.map(service => <ManageOneOrder key={service._id} service={service}></ManageOneOrder>)
                 }
