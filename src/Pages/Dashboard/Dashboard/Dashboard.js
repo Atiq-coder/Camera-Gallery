@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
-import ManageAllOrders from '../../ManageAllOrders/ManageAllOrders';
+// import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import {
     BrowserRouter as Router,
     Switch,
@@ -18,6 +18,7 @@ import Pay from '../Pay/Pay';
 import AddReview from '../Review/AddReview';
 import MyOrders from '../MyOrders/MyOrders';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 
 const Dashboard = () => {
     const { user, logOut } = useAuth();
