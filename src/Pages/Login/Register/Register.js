@@ -39,7 +39,7 @@ const Register = () => {
                     </Spinner></p>}
                     <Form onSubmit={handleRegister} >
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
+                            <Form.Label>Your Name</Form.Label>
                             <Form.Control onBlur={handleOnBlur} name="name" type="text" placeholder="Your Name" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -52,7 +52,7 @@ const Register = () => {
                             <Form.Control onBlur={handleOnBlur} name="password" type="password" placeholder="Password" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label>Re-Password</Form.Label>
                             <Form.Control onBlur={handleOnBlur} name="re_password" type="password" placeholder="Re-Password" />
                         </Form.Group>
                         <Button className="mb-2" variant="dark" type="submit">
